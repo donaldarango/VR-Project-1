@@ -72,8 +72,6 @@ namespace StarterAssets
 		private StarterAssetsInputs _input;
 		private GameObject _mainCamera;
 
-		private Animator anim;
-
 		private const float _threshold = 0.01f;
 
 		private bool IsCurrentDeviceMouse
@@ -101,7 +99,6 @@ namespace StarterAssets
 		{
 			_controller = GetComponent<CharacterController>();
 			_input = GetComponent<StarterAssetsInputs>();
-			anim = GetComponent<Animator>();
 #if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
 			_playerInput = GetComponent<PlayerInput>();
 #else
